@@ -1,0 +1,28 @@
+name: random-names
+version: 0.1.0.0
+category: Simple
+author: aiya000
+maintainer: aiya000 <aiya000.develop@gmail.com>
+copyright: aiya000
+license: MIT
+homepage: https://github.com/aiya000/hs-random-names
+description: Random, Arbitrary instances for naming cases (PascalCase, camelCase, etc)
+synopsis: Expose Random and Arbitrary instances
+
+ghc-options:
+  - -Wall
+  - -Wno-name-shadowing
+  - -Wno-unused-do-bind
+  - -Wno-orphans
+  - -fprint-potential-instances
+  - -fprint-explicit-kinds
+
+dependencies:
+  - QuickCheck
+  - base >= 4.7 && < 5
+  - random
+  - safe
+  - text
+
+library:
+  source-dirs: src
